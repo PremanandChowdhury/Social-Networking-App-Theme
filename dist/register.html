@@ -34,20 +34,40 @@
         <li><a href="login.html">Login</a></li>
       </ul>
     </nav>
-    <section class="landing">
-      <div class="dark-overlay">
-        <div class="landing-inner">
-          <h1 class="x-large">Social Network for Developers</h1>
-          <p class="lead">
-            Connect with other developers & share your posts and get help from
-            the Community.
-          </p>
-          <div class="buttons">
-            <a href="register.html" class="btn btn-primary">Sign Up</a>
-            <a href="login.html" class="btn btn">Login </a>
-          </div>
+    <section class="container">
+      <h1 class="large text-primary">Sign Up</h1>
+      <p class="lead"><i class="fas fa-user"></i>Create your Account</p>
+      <form action="dashboard.html" class="form">
+        <div class="form-group">
+          <input type="text" placeholder="Username" required />
         </div>
-      </div>
+        <div class="form-group">
+          <input type="email" placeholder="john@mail.com" required />
+          <small class="form-text">
+            The site uses Gavatar, for uploading a avatar use gvatar email
+          </small>
+        </div>
+        <div class="form-group">
+          <input
+            type="password"
+            placeholder="Password"
+            required
+            minlength="6"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="password"
+            placeholder="Confirm Password"
+            required
+            minlength="6"
+          />
+        </div>
+        <input type="submit" value="Register" class="btn btn-primary" />
+      </form>
+      <p class="my-3">
+        Already have an account ? <a href="login.html">Sign In</a>
+      </p>
     </section>
   </body>
 </html>
