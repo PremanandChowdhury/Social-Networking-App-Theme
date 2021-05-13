@@ -1,4 +1,5 @@
 @import 'config';
+@import 'utils';
 
 * {
   box-sizing: border-box;
@@ -40,7 +41,7 @@ img {
     display: flex;
   }
   a {
-    // color:#fff;
+    color:#fff;
     margin: 0 0.25rem;
     padding: 0.45rem;
 
