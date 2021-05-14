@@ -2,6 +2,7 @@
 @import 'utils';
 @import 'form';
 
+// GENERAL
 * {
   box-sizing: border-box;
   margin: 0;
@@ -21,9 +22,6 @@ a {
 ul {
   list-style: none;
 }
-img {
-  width: 100;
-}
 
 // NAVBAR
 .navbar {
@@ -37,7 +35,6 @@ img {
   position: fixed;
   top: 0;
   opacity: 0.9;
-
   ul {
     display: flex;
   }
@@ -45,7 +42,7 @@ img {
     color: #fff;
     margin: 0 0.25rem;
     padding: 0.45rem;
-    
+
     &:hover {
       color: $primary-color;
     }
@@ -55,6 +52,7 @@ img {
 // LANDING
 .landing {
   position: relative;
+  // FIXME: Fix the background image
   background: url('../dist/img/hero.jpg') no-repeat center center/cover;
   height: 100vh;
 
@@ -68,5 +66,20 @@ img {
     align-items: center;
     justify-content: center;
     text-align: center;
+  }
+}
+
+// PROFILES
+.profile {
+  display: grid;
+  grid-template-columns: 2fr 4fr 2fr;
+  grid-gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 2rem;
+  line-height: 1.8;
+  border-radius: 5px;
+  img {
+    height: 200px;
   }
 }
