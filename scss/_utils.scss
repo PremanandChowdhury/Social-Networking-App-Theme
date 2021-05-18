@@ -15,7 +15,7 @@
   margin-bottom: 1rem;
 }
 .large {
-  font-size: 1.5rem;
+  font-size: 2rem;
   line-height: 1.2;
   margin-bottom: 1rem;
 }
@@ -30,6 +30,14 @@
 // IMAGE
 .round-img {
   border-radius: 50%;
+  border: 4px solid gray;
+}
+
+// DIVIDER
+.line {
+  height: 1px;
+  background: #ccc;
+  margin: 2rem;
 }
 
 // BACKGROUNDS
@@ -119,8 +127,34 @@
     @include set-background($success-color);
   }
   &-danger {
-    @include set-background($danger-color) // background-color: $danger-color;
-;
+    @include set-background($danger-color); // background-color: $danger-color;
+  }
+}
+
+// BADGES
+.badge {
+  font-size: 0.9rem;
+  margin: 0.1rem 0;
+  padding: 0.1rem;
+  background: #ccc;
+  text-align: center;
+  color: $dark-color;
+  border-radius: 4px;
+
+  &-primary {
+    @include set-background($primary-color);
+  }
+  &-dark {
+    @include set-background($dark-color);
+  }
+  &-light {
+    @include set-background($light-color);
+  }
+  &-danger {
+    @include set-background($danger-color);
+  }
+  &-success {
+    @include set-background($danger-color);
   }
 }
 
