@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <title>Social Networking App Theme</title>
+  </head>
+  <body>
+    <nav class="navbar bg-dark">
+      <h1>
+        <a href="dashboard.html">
+          <i class="fas fa-code"></i>
+          DevConnector
+        </a>
+      </h1>
+
+      <ul>
+        <li><a href="profiles.html">Developers</a></li>
+        <li><a href="posts.html">Posts</a></li>
+        <li>
+          <a href="dashboard.html">
+            <i class="fas fa-user"></i>
+            <span class="hide-sm">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="login.html">
+            <i class="fas fa-sign-out-alt"></i>
+            <span class="hide-sm">Logout</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <section class="container">
+      <h1 class="large text-primary">Dashboard</h1>
+      <p class="lead"><i class="fas fa-user"></i>Welcome Prem!</p>
+      <div class="dash-buttons">
+        <a href="create-profile.html" class="btn">
+          <i class="fas fa-user-circle text-primary"></i>
+          Edit Profile
+        </a>
+        <a href="create-profile.html" class="btn">
+          <i class="fab fa-black-tie text-primary"></i>
+          Add Experience
+        </a>
+        <a href="create-profile.html" class="btn">
+          <i class="fas fa-user-graduat" class="text-primary"></i>
+          Add Education
+        </a>
+      </div>
+
+      <h2 class="my-2">Experience Credentials</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th class="hide-sm">Title</th>
+            <th class="hide-sm">Years</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Open Source</td>
+            <td class="hide-sm">Developer</td>
+            <td class="hide-sm">20-12-2020 - Present</td>
+            <td><buton class="btn btn-danger">Delete</buton></td>
+          </tr>
+          <tr>
+            <td>SearchingYard</td>
+            <td class="hide-sm">Jr. Developer</td>
+            <td class="hide-sm">10-10-2020 - 12-11-2020</td>
+            <td><buton class="btn btn-danger">Delete</buton></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2 class="my-2">Education Credentials</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>School</th>
+            <th class="hide-sm">Degree</th>
+            <th class="hide-sm">Years</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>GIET, Bbsr</td>
+            <td class="hide-sm">B.Tech</td>
+            <td class="hide-sm">10-06-2016 - 12-08-2020</td>
+            <td><buton class="btn btn-danger">Delete</buton></td>
+          </tr>
+          <tr>
+            <td>PMS</td>
+            <td class="hide-sm">Science</td>
+            <td class="hide-sm">10-02-2014 - 15-11-2016</td>
+            <td><buton class="btn btn-danger">Delete</buton></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="my-2">
+        <button class="btn btn-danger">
+          <i class="fas fa-user-minus"></i>
+          Delete My Account
+        </button>
+      </div>
+    </section>
+  </body>
+</html>

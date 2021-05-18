@@ -166,3 +166,16 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
 }
+
+// TABLE
+.table {
+  th,
+  td {
+    padding: 1rem;
+    text-align: center;
+    width: 250px;
+  }
+  th {
+    background: $light-color;
+  }
+}
