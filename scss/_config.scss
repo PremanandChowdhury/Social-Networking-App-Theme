@@ -1,4 +1,5 @@
-$primary-color: #17a2b8;
+// FIXME: Fix the color pallet and its accent
+$primary-color: #207684;
 $dark-color: #343a40;
 $light-color: #f4f4f4;
 $danger-color: #dc3545;
@@ -7,8 +8,8 @@ $max-width: 1100px;
 
 // Function to set the text color
 @function set-text-color($color) {
-  @if (lightness($color) > 50) {
-    @return #ccc;
+  @if (lightness($color) > 60) {
+    @return #4e4c4c;
   } @else {
     @return #fff;
   }
@@ -34,7 +35,7 @@ $placeamounts: (1, 2, 3, 4, 5);
   }
   // All around padding
   .p-#{$space} {
-    padding: #{$space}rem 0;
+    padding: #{$space}rem;
   }
   // Vertical padding
   .py-#{$space} {

@@ -26,6 +26,9 @@
 .text-primary {
   color: $primary-color;
 }
+.text-danger {
+  color: $danger-color;
+}
 
 // IMAGE
 .round-img {
@@ -173,7 +176,6 @@
   td {
     padding: 1rem;
     text-align: center;
-    width: 250px;
   }
   th {
     background: $light-color;

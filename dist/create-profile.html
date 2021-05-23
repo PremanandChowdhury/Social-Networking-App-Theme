@@ -29,39 +29,29 @@
       </h1>
 
       <ul>
-        <nav class="navbar bg-dark">
-          <h1>
-            <a href="dashboard.html">
-              <i class="fas fa-code"></i>
-              DevConnector
-            </a>
-          </h1>
-
-          <ul>
-            <li><a href="profiles.html">Developers</a></li>
-            <li><a href="posts.html">Posts</a></li>
-            <li>
-              <a href="dashboard.html">
-                <i class="fas fa-user"></i>
-                <span class="hide-sm">Dashboard</span>
-              </a>
-            </li>
-            <li>
-              <a href="login.html">
-                <i class="fas fa-sign-out-alt"></i>
-                <span class="hide-sm">Logout</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <li><a href="profiles.html">Developers</a></li>
+        <li><a href="posts.html">Posts</a></li>
+        <li>
+          |
+          <a href="dashboard.html">
+            <i class="fas fa-user"></i>
+            <span class="hide-sm">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="login.html">
+            <i class="fas fa-sign-out-alt"></i>
+            <span class="hide-sm">Logout</span>
+          </a>
+        </li>
       </ul>
     </nav>
     <section class="container">
       <h1 class="large text-primary">Create Your Profile</h1>
       <p class="lead">
-        <i class="fas fa-user"></i>Enter the details to build your profile
+        <i class="fas fa-user"></i> Enter the details to build your profile
       </p>
-      <small style="color: red"> * = required field</small>
+      <small class="text-danger"> * = required field</small>
       <form class="form" action="get">
         <div class="form-group">
           <select name="status" id="status">
