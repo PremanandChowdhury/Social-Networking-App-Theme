@@ -14,6 +14,9 @@ body {
   line-height: 1.6;
   background: #fff;
   color: rgb(29, 26, 26);
+  [switch-adjust-element-width] {
+    width: 100% !important;
+  }
 }
 a {
   text-decoration: none;
@@ -22,15 +25,19 @@ a {
 ul {
   list-style: none;
 }
+img {
+  height: 200px;
+  width: 200px;
+}
 
 // NAVBAR
 .navbar {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.7rem 2rem;
   border-bottom: 1px solid $primary-color;
-  width: 100%;
   z-index: 1;
   position: fixed;
   top: 0;
@@ -80,7 +87,8 @@ ul {
   line-height: 1.8;
   border-radius: 5px;
   img {
-    height: 200px;
+    height: 100%;
+    width: 100%;
   }
 }
 
@@ -98,9 +106,6 @@ ul {
     justify-content: center;
     text-align: center;
 
-    img {
-      width: 250px;
-    }
     .icons a {
       color: #fff;
       margin: 0 0.3rem;
@@ -157,3 +162,23 @@ ul {
     }
   }
 }
+
+// POSTS
+.post {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 2rem;
+  align-items: center;
+
+  & > .div:first-child() {
+    text-align: center;
+  }
+
+  img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+// MOBILE STYLES
+@import 'mobile'
